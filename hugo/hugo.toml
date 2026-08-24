@@ -1,0 +1,30 @@
+baseURL = "https://PKUfudawei.github.io/"
+locale = "en-US"
+title = "Dawei Fu"
+theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  author = "Dawei Fu"
+  description = "Personal website of Dawei Fu"
+  # PaperMod appearance toggles
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  comments = false
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/PKUfudawei"
+    title = "GitHub"
+  [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/citations?user=87YQFMQAAAAJ&hl=en"
+    title = "Google Scholar"
+
+[menu]
+  [[menu.main]]
+    name = "Blogs"
+    url = "/"
+    weight = 1

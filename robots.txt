@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://PKUfudawei.github.io/sitemap.xml
