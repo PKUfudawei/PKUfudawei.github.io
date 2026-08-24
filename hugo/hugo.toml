@@ -14,6 +14,10 @@ disableKinds = ["taxonomy", "term"]
   ShowCodeCopyButtons = true
   comments = false
 
+  # Icons-only home hero (renders social icons at top, like lilianweng.github.io)
+  [params.homeInfoParams]
+    AlignSocialIconsTo = "center"
+
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/PKUfudawei"

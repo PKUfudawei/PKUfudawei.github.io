@@ -1,5 +1,20 @@
-.footer-social {
+/* Icons-only home hero (lilianweng style): no welcome text, compact, centered */
+.first-entry.home-info {
+    min-height: 0;
+    margin: calc(var(--gap) * 2) 0 0 0;
+    padding-bottom: calc(var(--gap) * 2);
+}
+
+.first-entry.home-info .entry-footer {
+    text-align: center;
+}
+
+.first-entry.home-info .social-icons {
     display: flex;
     justify-content: center;
-    padding: 0 0 20px;
+}
+
+.first-entry.home-info .social-icons a svg {
+    height: 30px;
+    width: 30px;
 }
