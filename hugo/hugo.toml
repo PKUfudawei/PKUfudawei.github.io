@@ -14,8 +14,9 @@ disableKinds = ["taxonomy", "term"]
   ShowCodeCopyButtons = true
   comments = false
 
-  # Icons-only home hero (renders social icons at top, like lilianweng.github.io)
+  # Home hero (lilianweng.github.io style): greeting title + centered social icons
   [params.homeInfoParams]
+    Title = "😊Go with vibe!"
     AlignSocialIconsTo = "center"
 
   [[params.socialIcons]]

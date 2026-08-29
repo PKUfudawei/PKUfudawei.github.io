@@ -1,8 +1,17 @@
-/* Icons-only home hero (lilianweng style): no welcome text, compact, centered */
+/* Home hero (lilianweng style): greeting title + centered social icons */
 .first-entry.home-info {
     min-height: 0;
     margin: calc(var(--gap) * 2) 0 0 0;
     padding-bottom: calc(var(--gap) * 2);
+}
+
+.first-entry.home-info .entry-header {
+    text-align: center;
+}
+
+.first-entry.home-info .entry-header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 calc(var(--gap) * 1.5) 0;
 }
 
 .first-entry.home-info .entry-footer {
