@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-10-23T11:34:11Z",
+  "attempted_at": "2026-10-23T17:03:34Z",
   "conferences": {
-    "updated_at": "2026-10-23T11:34:11Z",
+    "updated_at": "2026-10-23T17:03:34Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-23T11:34:11Z",
+    "updated_at": "2026-10-23T17:03:34Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -4943,7 +4943,7 @@
     ]
   },
   "livebench": {
-    "updated_at": "2026-10-23T11:34:11Z",
+    "updated_at": "2026-10-23T17:03:34Z",
     "source_date": "2026-10-14",
     "url": "https://livebench.ai/",
     "metric": "Overall score",
@@ -5216,76 +5216,97 @@
       },
       {
         "rank": 39,
+        "name": "deepseek-v4-flash",
+        "company": "DeepSeek",
+        "score": 57.6,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 40,
         "name": "muse-spark-open",
         "company": "Meta",
         "score": 57.6,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 40,
+        "rank": 41,
         "name": "beam-1.0",
         "company": "Reflection AI",
         "score": 55.5,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 41,
+        "rank": 42,
         "name": "gemini-3.1-pro",
         "company": "Google",
         "score": 54.9,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 42,
+        "rank": 43,
         "name": "minimax-m3",
         "company": "Minimax",
         "score": 53.7,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 43,
+        "rank": 44,
+        "name": "smaug-nemotron-3.5-nvfp4",
+        "company": "Abacus.AI",
+        "score": 52.9,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 45,
         "name": "inkling",
         "company": "Thinking Machines",
         "score": 51.9,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 44,
+        "rank": 46,
         "name": "nemotron-super-vl-3.5",
         "company": "NVIDIA",
         "score": 51.5,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 45,
+        "rank": 47,
+        "name": "nemotron-super-vl-3.5-nvfp4",
+        "company": "NVIDIA",
+        "score": 50.0,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 48,
         "name": "mistral-large-4",
         "company": "Mistral AI",
         "score": 47.7,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 46,
+        "rank": 49,
         "name": "claude-haiku-4.5",
         "company": "Anthropic",
         "score": 46.0,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 47,
+        "rank": 50,
         "name": "gemma-4-31b",
         "company": "Google",
         "score": 41.5,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 48,
+        "rank": 51,
         "name": "nemotron-ultra-3",
         "company": "NVIDIA",
         "score": 40.8,
         "url": "https://livebench.ai/"
       },
       {
-        "rank": 49,
+        "rank": 52,
         "name": "nemotron-lightning-3.5",
         "company": "NVIDIA",
         "score": 28.7,
