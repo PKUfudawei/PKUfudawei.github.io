@@ -41,6 +41,12 @@
 .board-tab:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
 .board-filter { display: inline-flex; align-items: center; gap: .5rem; margin: .7rem 0 .25rem; cursor: pointer; }
 .board-filter input { accent-color: var(--primary); width: 1rem; height: 1rem; }
+.board-page-size { display: inline-flex; align-items: center; gap: .4rem; margin: .7rem 0 .25rem 1rem; color: var(--secondary); }
+.board-page-size select { color: var(--primary); background: var(--entry); border: 1px solid var(--border); border-radius: 6px; padding: .25rem .4rem; }
+.board-pager { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1rem 0; }
+.board-pager button { border: 1px solid var(--border); border-radius: 6px; padding: .35rem .75rem; }
+.board-pager button:disabled { opacity: .4; cursor: default; }
+.board-pager button:focus-visible, .board-page-size select:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 .conference-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: .85rem; }
 .dashboard-card { background: var(--entry); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
 .dashboard-card h3 { font-size: 1.12rem; margin-bottom: .8rem; }

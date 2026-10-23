@@ -36,6 +36,6 @@ git add -A && git commit -m "..." && git push
 - **Arena:** [Text Arena](https://arena.ai/leaderboard/text) rankings are retrieved through a public text rendering service because the official site blocks direct automated downloads and embedding. The source date is shown on the page.
 - **LiveBench:** latest release listed by livebench.ai, with an overall score computed from its public category CSV and organizations from its public model directory.
 
-The LLM page shows one leaderboard at a time. Its checkbox keeps the highest-scoring model for each named company or organization in that leaderboard; models without a known organization are omitted from this filtered view.
+The LLM page shows one leaderboard at a time, with per-page controls. Its checkbox keeps the highest-scoring model for each named company or organization in that leaderboard; models without a known organization are omitted from this filtered view. A leaderboard's source version date can be older than the site's latest fetch time, which is shown separately.
 
 The updater keeps each source's last successful snapshot if a fetch fails. To refresh manually, run the **Update conference and LLM dashboards** workflow in GitHub Actions.

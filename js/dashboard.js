@@ -112,13 +112,25 @@
         continue;
       }
       const old = board.source_date && age(`${board.source_date}T00:00:00Z`) > (key === "arena" ? 7 : 30);
-      const note = board.source_date ? `数据版本：${board.source_date}` : `抓取：${date(board.updated_at)}`;
+      const note = board.source_date
+        ? `数据版本：${board.source_date} · 本站抓取：${date(board.updated_at)}`
+        : `本站抓取：${date(board.updated_at)}`;
       block.append(make("p", `${note} · 指标：${board.metric} · ${board.items.length} 个模型${old ? " · 数据可能已过期" : ""}`, old ? "dashboard-stale" : "dashboard-note"));
       const control = make("label", undefined, "board-filter");
       const checkbox = make("input");
       checkbox.type = "checkbox";
       control.append(checkbox, make("span", "每家公司仅显示最强模型"));
       block.append(control);
+      const sizeControl = make("label", undefined, "board-page-size");
+      const pageSize = make("select");
+      pageSize.setAttribute("aria-label", `${title} 每页显示条数`);
+      for (const [value, label] of [["10", "10"], ["25", "25"], ["50", "50"], ["100", "100"], ["all", "全部"]]) {
+        const option = make("option", label);
+        option.value = value;
+        pageSize.append(option);
+      }
+      sizeControl.append(make("span", "每页显示"), pageSize, make("span", "条"));
+      block.append(sizeControl);
       const count = make("p", undefined, "dashboard-note");
       block.append(count);
       const table = make("table", undefined, "leaderboard-table");
@@ -129,6 +141,16 @@
       table.append(head);
       const body = make("tbody");
       table.append(body);
+      const pager = make("nav", undefined, "board-pager");
+      pager.setAttribute("aria-label", `${title} 翻页`);
+      const previous = make("button", "上一页");
+      previous.type = "button";
+      const pageStatus = make("span");
+      pageStatus.setAttribute("aria-live", "polite");
+      const next = make("button", "下一页");
+      next.type = "button";
+      pager.append(previous, pageStatus, next);
+      let page = 0;
       const fill = () => {
         const seen = new Set();
         const rows = board.items.filter((row) => {
@@ -140,8 +162,13 @@
           seen.add(key);
           return true;
         });
+        const size = pageSize.value === "all" ? Math.max(rows.length, 1) : Number(pageSize.value);
+        const pages = Math.max(1, Math.ceil(rows.length / size));
+        page = Math.min(page, pages - 1);
+        const start = page * size;
+        const visible = rows.slice(start, start + size);
         body.replaceChildren();
-        for (const row of rows) {
+        for (const row of visible) {
           const tr = make("tr");
           tr.append(make("td", String(row.rank)));
           const name = make("td");
@@ -149,13 +176,19 @@
           tr.append(name, make("td", row.company || "—"), make("td", String(row.score)));
           body.append(tr);
         }
-        count.textContent = `显示 ${rows.length} / ${board.items.length} 个模型${checkbox.checked ? "；按该榜单指标取每家公司最高分，未标注公司的模型已隐藏" : ""}`;
+        count.textContent = `显示 ${rows.length ? start + 1 : 0}–${start + visible.length} / ${rows.length} 条${checkbox.checked ? `（原榜单 ${board.items.length} 条；每家公司最高分，未标注公司的模型已隐藏）` : ""}`;
+        pageStatus.textContent = `第 ${page + 1} / ${pages} 页`;
+        previous.disabled = page === 0;
+        next.disabled = page >= pages - 1;
       };
-      checkbox.addEventListener("change", fill);
+      checkbox.addEventListener("change", () => { page = 0; fill(); });
+      pageSize.addEventListener("change", () => { page = 0; fill(); });
+      previous.addEventListener("click", () => { page -= 1; fill(); });
+      next.addEventListener("click", () => { page += 1; fill(); });
       fill();
       const scroller = make("div", undefined, "table-scroll");
       scroller.append(table);
-      block.append(scroller);
+      block.append(scroller, pager);
       content.append(block);
       panels.push(block);
     }
