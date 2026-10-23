@@ -1,12 +1,19 @@
 {
-  "attempted_at": "2026-10-23T04:53:28Z",
+  "attempted_at": "2026-10-23T04:57:25Z",
   "conferences": {
-    "updated_at": "2026-10-23T04:53:28Z",
+    "updated_at": "2026-10-23T04:57:25Z",
     "items": [
       {
         "name": "NeurIPS",
         "group": "AI",
         "next": null,
+        "last": {
+          "year": 2026,
+          "url": "https://neurips.cc/Conferences/2026",
+          "timezone": "UTC+0",
+          "abstract": "2026-05-05T11:59:00Z",
+          "paper": "2026-05-07T11:59:00Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/nips.yml",
         "latest_year": 2026
       },
@@ -14,6 +21,13 @@
         "name": "ICLR",
         "group": "AI",
         "next": null,
+        "last": {
+          "year": 2027,
+          "url": "https://iclr.cc/Conferences/2027",
+          "timezone": "AoE",
+          "abstract": "2026-09-19T11:59:59Z",
+          "paper": "2026-09-26T11:59:59Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/iclr.yml",
         "latest_year": 2027
       },
@@ -21,6 +35,13 @@
         "name": "ICML",
         "group": "AI",
         "next": null,
+        "last": {
+          "year": 2026,
+          "url": "https://icml.cc/Conferences/2026",
+          "timezone": "UTC+0",
+          "abstract": "2026-01-24T11:59:59Z",
+          "paper": "2026-01-29T11:59:59Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/icml.yml",
         "latest_year": 2026
       },
@@ -34,6 +55,7 @@
           "abstract": "2026-11-11T11:59:59Z",
           "paper": "2026-11-17T11:59:59Z"
         },
+        "last": null,
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/cvpr.yml",
         "latest_year": 2027
       },
@@ -41,6 +63,13 @@
         "name": "ICCV",
         "group": "CV",
         "next": null,
+        "last": {
+          "year": 2025,
+          "url": "https://iccv.thecvf.com/Conferences/2025",
+          "timezone": "UTC+0",
+          "abstract": "2025-03-04T09:59:59Z",
+          "paper": "2025-03-08T09:59:59Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/iccv.yml",
         "latest_year": 2027
       },
@@ -48,6 +77,13 @@
         "name": "ECCV",
         "group": "CV",
         "next": null,
+        "last": {
+          "year": 2026,
+          "url": "https://eccv.ecva.net/",
+          "timezone": "UTC-8",
+          "abstract": "2026-02-26T22:00:00Z",
+          "paper": "2026-03-05T22:00:00Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/eccv.yml",
         "latest_year": 2026
       },
@@ -61,6 +97,7 @@
           "abstract": null,
           "paper": "2027-01-05T11:59:59Z"
         },
+        "last": null,
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/acl.yml",
         "latest_year": 2027
       },
@@ -68,6 +105,13 @@
         "name": "EMNLP",
         "group": "NLP",
         "next": null,
+        "last": {
+          "year": 2026,
+          "url": "https://2026.emnlp.org/",
+          "timezone": "UTC-12",
+          "abstract": null,
+          "paper": "2026-08-03T11:59:59Z"
+        },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/emnlp.yml",
         "latest_year": 2026
       },
@@ -81,13 +125,14 @@
           "abstract": null,
           "paper": "2026-12-24T11:59:59Z"
         },
+        "last": null,
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/naacl.yml",
         "latest_year": 2027
       }
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-23T04:53:28Z",
+    "updated_at": "2026-10-23T04:57:25Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -160,7 +205,7 @@
     "mode": "official_embed"
   },
   "livebench": {
-    "updated_at": "2026-10-23T04:53:28Z",
+    "updated_at": "2026-10-23T04:57:25Z",
     "source_date": "2026-10-14",
     "url": "https://livebench.ai/",
     "metric": "Overall score",

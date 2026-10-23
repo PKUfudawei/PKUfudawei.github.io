@@ -32,20 +32,26 @@
       const list = make("div", undefined, "conference-grid");
       for (const item of section.items.filter((entry) => entry.group === group)) {
         const card = make("article", undefined, "dashboard-card");
+        const edition = item.next || item.last;
         const title = make("h3");
-        title.append(link(item.next ? `${item.name} ${item.next.year}` : item.name, item.next?.url || item.source));
+        title.append(link(edition ? `${item.name} ${edition.year}` : item.name, edition?.url || item.source));
         card.append(title);
-        if (item.next) {
-          if (item.next.abstract) {
+        if (edition) {
+          if (item.last) card.append(make("p", "上次截稿 · 已过期；下一届时间待公布", "dashboard-stale"));
+          if (edition.abstract) {
             const abstract = make("p");
-            abstract.append(make("span", "摘要截止 · ", "label"), make("strong", date(item.next.abstract)));
+            abstract.append(make("span", "摘要截止 · ", "label"), make("strong", date(edition.abstract)));
             card.append(abstract);
           }
           const paper = make("p");
-          paper.append(make("span", "全文截止 · ", "label"), make("strong", date(item.next.paper)));
+          paper.append(make("span", "全文截止 · ", "label"), make("strong", date(edition.paper)));
           card.append(paper);
-          const days = Math.ceil((new Date(item.next.paper) - Date.now()) / 86400000);
-          card.append(make("p", days > 0 ? `约 ${days} 天后 · 原始时区 ${item.next.timezone}` : `即将截止 · 原始时区 ${item.next.timezone}`, "dashboard-note"));
+          if (item.next) {
+            const days = Math.ceil((new Date(edition.paper) - Date.now()) / 86400000);
+            card.append(make("p", days > 0 ? `约 ${days} 天后 · 原始时区 ${edition.timezone}` : `即将截止 · 原始时区 ${edition.timezone}`, "dashboard-note"));
+          } else {
+            card.append(make("p", `原始时区 ${edition.timezone}`, "dashboard-note"));
+          }
         } else {
           card.append(make("p", `下一届截稿时间待公布${item.latest_year ? `（已收录至 ${item.latest_year}）` : ""}`, "dashboard-note"));
         }

@@ -4,10 +4,6 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
   </header>
-  <div class="dashboard-tabs" aria-label="Dashboard pages">
-    <a href="/ai-conference-due/" {{ if eq .Params.dashboard "conferences" }}aria-current="page"{{ end }}>AI Conference Due</a>
-    <a href="/llm-evaluation/" {{ if eq .Params.dashboard "leaderboards" }}aria-current="page"{{ end }}>LLM Evaluation</a>
-  </div>
   <p class="dashboard-update" id="dashboard-update" aria-live="polite">正在加载数据…</p>
   <div id="dashboard-content"></div>
 </article>

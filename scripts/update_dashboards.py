@@ -57,7 +57,7 @@ def conferences():
             for conf in document.get("confs", []):
                 for timeline in conf.get("timeline", []):
                     paper = parse_deadline(timeline.get("deadline"), conf.get("timezone"))
-                    if paper and datetime.fromisoformat(paper.replace("Z", "+00:00")) > NOW:
+                    if paper:
                         editions.append({
                             "year": conf["year"],
                             "url": conf.get("link", ""),
@@ -65,8 +65,11 @@ def conferences():
                             "abstract": parse_deadline(timeline.get("abstract_deadline"), conf.get("timezone")),
                             "paper": paper,
                         })
-            selected = min(editions, key=lambda row: row["paper"]) if editions else None
-            rows.append({"name": name, "group": group, "next": selected,
+            upcoming = [edition for edition in editions
+                        if datetime.fromisoformat(edition["paper"].replace("Z", "+00:00")) > NOW]
+            selected = min(upcoming, key=lambda row: row["paper"]) if upcoming else None
+            previous = max(editions, key=lambda row: row["paper"]) if editions and not selected else None
+            rows.append({"name": name, "group": group, "next": selected, "last": previous,
                          "source": url, "latest_year": max((e["year"] for e in document.get("confs", [])), default=None)})
     return {"updated_at": stamp(), "items": rows}
 
