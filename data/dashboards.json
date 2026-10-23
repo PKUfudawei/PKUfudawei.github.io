@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-10-23T06:19:31Z",
+  "attempted_at": "2026-10-23T11:34:11Z",
   "conferences": {
-    "updated_at": "2026-10-23T06:19:31Z",
+    "updated_at": "2026-10-23T11:34:11Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-23T06:19:31Z",
+    "updated_at": "2026-10-23T11:34:11Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -4943,7 +4943,7 @@
     ]
   },
   "livebench": {
-    "updated_at": "2026-10-23T06:19:31Z",
+    "updated_at": "2026-10-23T11:34:11Z",
     "source_date": "2026-10-14",
     "url": "https://livebench.ai/",
     "metric": "Overall score",
