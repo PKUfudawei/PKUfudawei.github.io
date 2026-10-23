@@ -34,10 +34,10 @@ disableKinds = ["taxonomy", "term"]
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "AI Conference Due"
+    name = "AI Conference Deadlines"
     url = "/ai-conference-due/"
     weight = 2
   [[menu.main]]
-    name = "LLM Evaluation"
+    name = "LLM Leaderboards"
     url = "/llm-evaluation/"
     weight = 3

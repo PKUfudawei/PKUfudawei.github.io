@@ -64,54 +64,102 @@
   }
 
   function renderBoards(data) {
-    update.textContent = "榜单按来源定时抓取；每张卡片显示对应数据的日期。";
-    for (const [key, title] of [["artificial_analysis", "Artificial Analysis"], ["arena", "Arena"], ["livebench", "LiveBench"]]) {
+    update.textContent = "榜单每 6 小时检查一次更新；切换榜单可查看各自的数据日期。";
+    const boards = [["artificial_analysis", "Artificial Analysis"], ["arena", "Arena"], ["livebench", "LiveBench"]];
+    const tabs = make("div", undefined, "board-tabs");
+    tabs.setAttribute("role", "tablist");
+    tabs.setAttribute("aria-label", "LLM 榜单");
+    const buttons = [];
+    const panels = [];
+    const activate = (index, focus = false) => {
+      buttons.forEach((button, i) => {
+        button.setAttribute("aria-selected", String(i === index));
+        button.tabIndex = i === index ? 0 : -1;
+        panels[i].hidden = i !== index;
+      });
+      if (focus) buttons[index].focus();
+    };
+    for (const [index, [key, title]] of boards.entries()) {
+      const button = make("button", title, "board-tab");
+      button.type = "button";
+      button.id = `tab-${key}`;
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-controls", `panel-${key}`);
+      button.addEventListener("click", () => activate(index));
+      button.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+          event.preventDefault();
+          activate((index + (event.key === "ArrowRight" ? 1 : boards.length - 1)) % boards.length, true);
+        }
+      });
+      tabs.append(button);
+      buttons.push(button);
+    }
+    update.before(tabs);
+    for (const [index, [key, title]] of boards.entries()) {
       const board = data[key];
       const block = make("section", undefined, "dashboard-group leaderboard-group");
+      block.id = `panel-${key}`;
+      block.setAttribute("role", "tabpanel");
+      block.setAttribute("aria-labelledby", `tab-${key}`);
       const heading = make("h2");
       heading.append(link(title, board?.url));
       block.append(heading);
-      if (key === "arena" && board?.mode === "official_embed") {
-        block.append(make("p", "Arena 官网实时榜单 · 页面由 Arena 提供，加载速度取决于其服务。", "dashboard-note"));
-        const frame = make("iframe");
-        frame.src = board.embed_url;
-        frame.title = "Arena 官方实时榜单";
-        frame.loading = "lazy";
-        frame.className = "arena-frame";
-        block.append(frame);
-        block.append(link("打开 Arena 官网 ↗", board.url));
-        content.append(block);
-        continue;
-      }
       if (!board?.items?.length) {
-        block.append(make("p", "暂无可用数据，请到来源网站查看。"));
+        block.append(make("p", "暂时没有可用的榜单快照，请到来源网站查看。"));
         content.append(block);
+        panels.push(block);
         continue;
       }
-      const old = board.source_date && age(`${board.source_date}T00:00:00Z`) > 30;
+      const old = board.source_date && age(`${board.source_date}T00:00:00Z`) > (key === "arena" ? 7 : 30);
       const note = board.source_date ? `数据版本：${board.source_date}` : `抓取：${date(board.updated_at)}`;
-      block.append(make("p", `${note} · 指标：${board.metric}${old ? " · 历史数据" : ""}`, old ? "dashboard-stale" : "dashboard-note"));
+      block.append(make("p", `${note} · 指标：${board.metric} · ${board.items.length} 个模型${old ? " · 数据可能已过期" : ""}`, old ? "dashboard-stale" : "dashboard-note"));
+      const control = make("label", undefined, "board-filter");
+      const checkbox = make("input");
+      checkbox.type = "checkbox";
+      control.append(checkbox, make("span", "每家公司仅显示最强模型"));
+      block.append(control);
+      const count = make("p", undefined, "dashboard-note");
+      block.append(count);
       const table = make("table", undefined, "leaderboard-table");
       const head = make("thead");
       const headerRow = make("tr");
-      for (const label of ["排名", "模型", board.metric]) headerRow.append(make("th", label));
+      for (const label of ["原始排名", "模型", "公司 / 机构", board.metric]) headerRow.append(make("th", label));
       head.append(headerRow);
       table.append(head);
       const body = make("tbody");
-      for (const row of board.items) {
-        const tr = make("tr");
-        tr.append(make("td", String(row.rank)));
-        const name = make("td");
-        name.append(link(row.name, row.url));
-        tr.append(name, make("td", String(row.score)));
-        body.append(tr);
-      }
       table.append(body);
+      const fill = () => {
+        const seen = new Set();
+        const rows = board.items.filter((row) => {
+          if (!checkbox.checked) return true;
+          const company = row.company?.trim();
+          if (!company) return false;
+          const key = company.toLocaleLowerCase();
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+        body.replaceChildren();
+        for (const row of rows) {
+          const tr = make("tr");
+          tr.append(make("td", String(row.rank)));
+          const name = make("td");
+          name.append(link(row.name, row.url));
+          tr.append(name, make("td", row.company || "—"), make("td", String(row.score)));
+          body.append(tr);
+        }
+        count.textContent = `显示 ${rows.length} / ${board.items.length} 个模型${checkbox.checked ? "；按该榜单指标取每家公司最高分，未标注公司的模型已隐藏" : ""}`;
+      };
+      checkbox.addEventListener("change", fill);
+      fill();
       const scroller = make("div", undefined, "table-scroll");
       scroller.append(table);
       block.append(scroller);
       content.append(block);
+      panels.push(block);
     }
+    activate(0);
   }
 
   try {

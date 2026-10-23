@@ -32,8 +32,10 @@ git add -A && git commit -m "..." && git push
 ## Dashboard data
 
 - **AI Conference Due:** nine conferences from the [CCF Deadlines](https://github.com/ccfddl/ccf-deadlines) YAML files. When a future deadline is unavailable, the most recent known deadline is shown as expired. Times display in Beijing time; conference sites remain authoritative.
-- **Artificial Analysis:** Intelligence Index scores parsed from its public leaderboard page. Its official API requires a key, so page structure changes may interrupt updates.
-- **Arena:** the official live leaderboard is embedded directly from [Arena](https://lmarena.ai/leaderboard), since its site blocks automated downloads. A direct link is shown if the embed does not load.
-- **LiveBench:** latest release listed by livebench.ai, with an overall score computed from its public category CSV.
+- **Artificial Analysis:** Intelligence Index scores and model creators parsed from its public leaderboard page. Its official API requires a key, so page structure changes may interrupt updates.
+- **Arena:** [Text Arena](https://arena.ai/leaderboard/text) rankings are retrieved through a public text rendering service because the official site blocks direct automated downloads and embedding. The source date is shown on the page.
+- **LiveBench:** latest release listed by livebench.ai, with an overall score computed from its public category CSV and organizations from its public model directory.
+
+The LLM page shows one leaderboard at a time. Its checkbox keeps the highest-scoring model for each named company or organization in that leaderboard; models without a known organization are omitted from this filtered view.
 
 The updater keeps each source's last successful snapshot if a fetch fails. To refresh manually, run the **Update conference and LLM dashboards** workflow in GitHub Actions.

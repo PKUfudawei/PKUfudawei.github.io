@@ -111,15 +111,34 @@ def artificial_analysis():
     return {"updated_at": stamp(), "source_date": None, "url": url,
             "metric": "Intelligence Index", "items": [
                 {"rank": i, "name": m["name"], "score": round(m["intelligenceIndex"], 1),
+                 "company": m.get("modelCreatorName") or "",
                  "url": f"https://artificialanalysis.ai/models/{m['slug']}"}
-                for i, m in enumerate(ranked[:10], 1)]}
+                for i, m in enumerate(ranked, 1)]}
 
 
 def arena():
-    # Arena blocks automated reads. Its official Hugging Face Space embeds the
-    # live leaderboard directly, so the visitor sees the current source page.
-    return {"url": "https://lmarena.ai/leaderboard",
-            "embed_url": "https://lmarena.ai/leaderboard", "mode": "official_embed"}
+    # Arena blocks direct automated requests and cannot be embedded. Jina's
+    # public text rendering exposes the official page without requiring a key.
+    source = "https://arena.ai/leaderboard/text"
+    markdown = fetch("https://r.jina.ai/" + source)
+    pattern = (r"(?m)^(\d{1,3})\n\t\n\d+\n\d+\n\t\n"
+               r"([^\n]+)\n([^\n]+)\n\t\n(\d{3,4})\n±")
+    matches = re.findall(pattern, markdown)
+    if len(matches) < 50 or int(matches[0][0]) != 1:
+        raise ValueError("Arena text page did not contain a complete ranking")
+    date_match = re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2}, \d{4}\b", markdown)
+    if not date_match:
+        raise ValueError("Arena leaderboard date was not found")
+    source_date = datetime.strptime(date_match.group(), "%b %d, %Y").date().isoformat()
+    items = []
+    for rank, name, lab, score in matches:
+        company = lab.split(" · ", 1)[0] if " · " in lab else lab
+        if re.match(r"^(?:Apache|MIT$|CC-|Proprietary$|Jamba Open$)", company):
+            company = ""
+        items.append({"rank": int(rank), "name": name.strip(), "company": company,
+                      "score": int(score), "url": source})
+    return {"updated_at": stamp(), "source_date": source_date, "url": source,
+            "metric": "Arena score", "items": items}
 
 
 def livebench():
@@ -129,6 +148,11 @@ def livebench():
     if not bundle:
         raise ValueError("LiveBench bundle was not found")
     js = fetch(url + bundle.group(1))
+    organizations = {
+        quoted or bare: organization
+        for quoted, bare, organization in re.findall(
+            r'(?:"([^"]+)"|([A-Za-z_$][\w$-]*)):\{[^{}]*?organization:"([^"]+)"', js)
+    }
     releases = re.search(r'_e=\[([^\]]+)\]', js)
     if not releases:
         raise ValueError("LiveBench release list was not found")
@@ -147,8 +171,9 @@ def livebench():
         raise ValueError("LiveBench table contained no complete model scores")
     return {"updated_at": stamp(), "source_date": f"{latest[:4]}-{latest[4:6]}-{latest[6:]}",
             "url": url, "metric": "Overall score", "items": [
-                {"rank": i, "name": name, "score": round(score, 1), "url": url}
-                for i, (name, score) in enumerate(ranked[:10], 1)]}
+                {"rank": i, "name": name, "company": organizations.get(name, ""),
+                 "score": round(score, 1), "url": url}
+                for i, (name, score) in enumerate(ranked, 1)]}
 
 
 def main():
