@@ -7,5 +7,5 @@
   <p class="dashboard-update" id="dashboard-update" aria-live="polite">正在加载数据…</p>
   <div id="dashboard-content"></div>
 </article>
-<script src="/js/dashboard.js" defer></script>
+<script src="/js/dashboard.js?v={{ readFile "static/js/dashboard.js" | md5 }}" defer></script>
 {{ end }}
