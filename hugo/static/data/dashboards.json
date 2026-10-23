@@ -1,0 +1,230 @@
+{
+  "attempted_at": "2026-10-23T04:53:28Z",
+  "conferences": {
+    "updated_at": "2026-10-23T04:53:28Z",
+    "items": [
+      {
+        "name": "NeurIPS",
+        "group": "AI",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/nips.yml",
+        "latest_year": 2026
+      },
+      {
+        "name": "ICLR",
+        "group": "AI",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/iclr.yml",
+        "latest_year": 2027
+      },
+      {
+        "name": "ICML",
+        "group": "AI",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/icml.yml",
+        "latest_year": 2026
+      },
+      {
+        "name": "CVPR",
+        "group": "CV",
+        "next": {
+          "year": 2027,
+          "url": "https://cvpr.thecvf.com/Conferences/2027",
+          "timezone": "UTC-12",
+          "abstract": "2026-11-11T11:59:59Z",
+          "paper": "2026-11-17T11:59:59Z"
+        },
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/cvpr.yml",
+        "latest_year": 2027
+      },
+      {
+        "name": "ICCV",
+        "group": "CV",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/iccv.yml",
+        "latest_year": 2027
+      },
+      {
+        "name": "ECCV",
+        "group": "CV",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/eccv.yml",
+        "latest_year": 2026
+      },
+      {
+        "name": "ACL",
+        "group": "NLP",
+        "next": {
+          "year": 2027,
+          "url": "https://2027.aclweb.org/",
+          "timezone": "UTC-12",
+          "abstract": null,
+          "paper": "2027-01-05T11:59:59Z"
+        },
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/acl.yml",
+        "latest_year": 2027
+      },
+      {
+        "name": "EMNLP",
+        "group": "NLP",
+        "next": null,
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/emnlp.yml",
+        "latest_year": 2026
+      },
+      {
+        "name": "NAACL",
+        "group": "NLP",
+        "next": {
+          "year": 2027,
+          "url": "https://2027.naacl.org/",
+          "timezone": "UTC-12",
+          "abstract": null,
+          "paper": "2026-12-24T11:59:59Z"
+        },
+        "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/naacl.yml",
+        "latest_year": 2027
+      }
+    ]
+  },
+  "artificial_analysis": {
+    "updated_at": "2026-10-23T04:53:28Z",
+    "source_date": null,
+    "url": "https://artificialanalysis.ai/leaderboards/models",
+    "metric": "Intelligence Index",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Claude Opus 5.5 (Max, Default Fallback)",
+        "score": 57.6,
+        "url": "https://artificialanalysis.ai/models/claude-opus-5-5"
+      },
+      {
+        "rank": 2,
+        "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+        "score": 56.0,
+        "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
+      },
+      {
+        "rank": 3,
+        "name": "Claude Opus 5.5 (Xhigh, Default Fallback)",
+        "score": 56.0,
+        "url": "https://artificialanalysis.ai/models/claude-opus-5-5-xhigh"
+      },
+      {
+        "rank": 4,
+        "name": "Muse Wonder Full (Max)",
+        "score": 55.8,
+        "url": "https://artificialanalysis.ai/models/muse-wonder-full"
+      },
+      {
+        "rank": 5,
+        "name": "Claude Opus 5.5 (High, Default Fallback)",
+        "score": 53.6,
+        "url": "https://artificialanalysis.ai/models/claude-opus-5-5-high"
+      },
+      {
+        "rank": 6,
+        "name": "Claude Fable 5.1 (Max, Default Fallback)",
+        "score": 53.4,
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-1"
+      },
+      {
+        "rank": 7,
+        "name": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+        "score": 53.2,
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh"
+      },
+      {
+        "rank": 8,
+        "name": "GPT-6 Astra (Max)",
+        "score": 52.7,
+        "url": "https://artificialanalysis.ai/models/gpt-6-astra"
+      },
+      {
+        "rank": 9,
+        "name": "Gemini 4 Argon (High)",
+        "score": 52.6,
+        "url": "https://artificialanalysis.ai/models/gemini-4-argon"
+      },
+      {
+        "rank": 10,
+        "name": "Muse Wonder (Max)",
+        "score": 52.4,
+        "url": "https://artificialanalysis.ai/models/muse-wonder"
+      }
+    ]
+  },
+  "arena": {
+    "url": "https://lmarena.ai/leaderboard",
+    "embed_url": "https://lmarena.ai/leaderboard",
+    "mode": "official_embed"
+  },
+  "livebench": {
+    "updated_at": "2026-10-23T04:53:28Z",
+    "source_date": "2026-10-14",
+    "url": "https://livebench.ai/",
+    "metric": "Overall score",
+    "items": [
+      {
+        "rank": 1,
+        "name": "claude-fable-5.1",
+        "score": 88.0,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 2,
+        "name": "claude-opus-5.5",
+        "score": 86.5,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 3,
+        "name": "gpt-6-astra",
+        "score": 86.1,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 4,
+        "name": "gpt-6.1-sol",
+        "score": 85.4,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 5,
+        "name": "gemini-4-argon",
+        "score": 84.1,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 6,
+        "name": "claude-fable-5",
+        "score": 83.6,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 7,
+        "name": "claude-sonnet-5.5",
+        "score": 82.5,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 8,
+        "name": "claude-opus-5",
+        "score": 82.1,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 9,
+        "name": "gpt-6-sol",
+        "score": 81.9,
+        "url": "https://livebench.ai/"
+      },
+      {
+        "rank": 10,
+        "name": "deepseek-v4.1-flash-1017",
+        "score": 79.2,
+        "url": "https://livebench.ai/"
+      }
+    ]
+  }
+}

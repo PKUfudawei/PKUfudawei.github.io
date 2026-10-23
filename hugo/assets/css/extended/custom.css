@@ -27,3 +27,29 @@
     height: 30px;
     width: 30px;
 }
+
+.dashboard { max-width: 900px; margin: 0 auto 3rem; }
+.dashboard-header h1 { font-size: 2.2rem; margin-bottom: .35rem; }
+.dashboard-header p, .dashboard-update, .dashboard-note { color: var(--secondary); }
+.dashboard-tabs { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.8rem 0 1.2rem; }
+.dashboard-tabs a { padding: .55rem .9rem; border: 1px solid var(--border); border-radius: 999px; }
+.dashboard-tabs a[aria-current="page"] { background: var(--primary); color: var(--theme); border-color: var(--primary); }
+.dashboard-update { font-size: .88rem; margin-bottom: 1.6rem; }
+.dashboard-group { margin: 2rem 0 2.5rem; }
+.dashboard-group h2 { font-size: 1.35rem; margin-bottom: .8rem; }
+.conference-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: .85rem; }
+.dashboard-card { background: var(--entry); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
+.dashboard-card h3 { font-size: 1.12rem; margin-bottom: .8rem; }
+.dashboard-card p { margin: .3rem 0; }
+.dashboard-card .label { color: var(--secondary); }
+.dashboard-card > a { display: inline-block; margin-top: .8rem; font-size: .85rem; }
+.dashboard-note, .dashboard-stale { font-size: .85rem; }
+.dashboard-stale { color: #ae6b00; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+.leaderboard-table { width: 100%; border-collapse: collapse; text-align: left; }
+.leaderboard-table th, .leaderboard-table td { padding: .65rem .85rem; border-bottom: 1px solid var(--border); }
+.leaderboard-table th:last-child, .leaderboard-table td:last-child { text-align: right; white-space: nowrap; }
+.leaderboard-table tr:last-child td { border-bottom: 0; }
+.leaderboard-table th { background: var(--entry); font-size: .84rem; }
+.leaderboard-table td:nth-child(2) { min-width: 220px; }
+.arena-frame { display: block; width: 100%; height: 680px; border: 1px solid var(--border); border-radius: 10px; background: var(--entry); margin: .8rem 0; }
