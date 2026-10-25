@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-10-25T04:36:50Z",
+  "attempted_at": "2026-10-25T11:21:11Z",
   "conferences": {
-    "updated_at": "2026-10-25T04:36:50Z",
+    "updated_at": "2026-10-25T11:21:11Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-25T04:36:50Z",
+    "updated_at": "2026-10-25T11:21:11Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -2002,7 +2002,7 @@
     ]
   },
   "arena": {
-    "updated_at": "2026-10-23T06:19:31Z",
+    "updated_at": "2026-10-25T11:21:11Z",
     "source_date": "2026-10-22",
     "url": "https://arena.ai/leaderboard/text",
     "metric": "Arena score",
