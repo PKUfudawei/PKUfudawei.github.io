@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-10-26T22:38:04Z",
+  "attempted_at": "2026-10-27T04:59:22Z",
   "conferences": {
-    "updated_at": "2026-10-26T22:38:04Z",
+    "updated_at": "2026-10-27T04:59:22Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-26T22:38:04Z",
+    "updated_at": "2026-10-27T04:59:22Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
