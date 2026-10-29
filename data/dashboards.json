@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-10-29T05:43:06Z",
+  "attempted_at": "2026-10-29T12:56:36Z",
   "conferences": {
-    "updated_at": "2026-10-29T05:43:06Z",
+    "updated_at": "2026-10-29T12:56:36Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-10-29T05:43:06Z",
+    "updated_at": "2026-10-29T12:56:36Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -513,7 +513,7 @@
         "name": "Mistral Large 4 Preview",
         "score": 25.3,
         "company": "Mistral",
-        "url": "https://artificialanalysis.ai/models/mistral-large-4"
+        "url": "https://artificialanalysis.ai/models/mistral-large-4-preview"
       },
       {
         "rank": 55,
