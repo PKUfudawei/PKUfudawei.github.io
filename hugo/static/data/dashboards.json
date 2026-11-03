@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-03T00:55:37Z",
+  "attempted_at": "2026-11-03T14:07:00Z",
   "conferences": {
-    "updated_at": "2026-11-03T00:55:37Z",
+    "updated_at": "2026-11-03T14:07:00Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -43,7 +43,7 @@
           "paper": "2026-01-29T11:59:59Z"
         },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/icml.yml",
-        "latest_year": 2026
+        "latest_year": 2027
       },
       {
         "name": "CVPR",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-11-03T00:55:37Z",
+    "updated_at": "2026-11-03T14:07:00Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -370,38 +370,38 @@
       },
       {
         "rank": 34,
+        "name": "Grok 4.7 (Xhigh)",
+        "score": 35.3,
+        "company": "SpaceXAI",
+        "url": "https://artificialanalysis.ai/models/grok-4-7"
+      },
+      {
+        "rank": 35,
         "name": "Grok 4.7 (High)",
         "score": 35.0,
         "company": "SpaceXAI",
         "url": "https://artificialanalysis.ai/models/grok-4-7-high"
       },
       {
-        "rank": 35,
+        "rank": 36,
         "name": "GPT-6.1 Sol (Low)",
         "score": 34.5,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol-low"
       },
       {
-        "rank": 36,
+        "rank": 37,
         "name": "Claude Opus 5.5 (Low, Default Fallback)",
         "score": 34.5,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5-low"
       },
       {
-        "rank": 37,
+        "rank": 38,
         "name": "Claude Haiku 5.5 (Xhigh)",
         "score": 34.3,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-haiku-5-5-xhigh"
-      },
-      {
-        "rank": 38,
-        "name": "Grok 4.7 (Xhigh)",
-        "score": 34.3,
-        "company": "SpaceXAI",
-        "url": "https://artificialanalysis.ai/models/grok-4-7"
       },
       {
         "rank": 39,
