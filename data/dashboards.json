@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-06T19:21:18Z",
+  "attempted_at": "2026-11-07T05:54:28Z",
   "conferences": {
-    "updated_at": "2026-11-06T19:21:18Z",
+    "updated_at": "2026-11-07T05:54:28Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-11-06T19:21:18Z",
+    "updated_at": "2026-11-07T05:54:28Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -755,69 +755,76 @@
       },
       {
         "rank": 89,
+        "name": "K-EXAONE 2.0",
+        "score": 7.6,
+        "company": "LG AI Research",
+        "url": "https://artificialanalysis.ai/models/k-exaone-2-0-0803"
+      },
+      {
+        "rank": 90,
         "name": "Muse Glimmer (High)",
         "score": 6.3,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-glimmer"
       },
       {
-        "rank": 90,
+        "rank": 91,
         "name": "Command A+",
         "score": 6.2,
         "company": "Cohere",
         "url": "https://artificialanalysis.ai/models/command-a-plus"
       },
       {
-        "rank": 91,
+        "rank": 92,
         "name": "Nemotron 3.5 Lightning",
         "score": 5.5,
         "company": "NVIDIA",
         "url": "https://artificialanalysis.ai/models/nemotron-3-5-lightning"
       },
       {
-        "rank": 92,
+        "rank": 93,
         "name": "Granite 4.2 8B",
         "score": 5.1,
         "company": "IBM",
         "url": "https://artificialanalysis.ai/models/granite-4-2-8b"
       },
       {
-        "rank": 93,
+        "rank": 94,
         "name": "Granite 4.2 3B",
         "score": 4.7,
         "company": "IBM",
         "url": "https://artificialanalysis.ai/models/granite-4-2-3b"
       },
       {
-        "rank": 94,
+        "rank": 95,
         "name": "Mistral Medium 3.5",
         "score": 4.6,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-medium-3-5"
       },
       {
-        "rank": 95,
+        "rank": 96,
         "name": "Gemma 4 31B (Reasoning)",
         "score": 4.4,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemma-4-31b"
       },
       {
-        "rank": 96,
+        "rank": 97,
         "name": "Mistral Small 4 (Reasoning)",
         "score": 4.3,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-small-4"
       },
       {
-        "rank": 97,
+        "rank": 98,
         "name": "North Mini Code",
         "score": 3.4,
         "company": "Cohere",
         "url": "https://artificialanalysis.ai/models/north-mini-code"
       },
       {
-        "rank": 98,
+        "rank": 99,
         "name": "NVIDIA Nemotron 3 Nano 4B",
         "score": 1.8,
         "company": "NVIDIA",
