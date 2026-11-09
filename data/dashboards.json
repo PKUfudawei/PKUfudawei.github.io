@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-08T21:59:47Z",
+  "attempted_at": "2026-11-09T22:17:21Z",
   "conferences": {
-    "updated_at": "2026-11-08T21:59:47Z",
+    "updated_at": "2026-11-09T22:17:21Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,234 +132,234 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-11-08T21:59:47Z",
+    "updated_at": "2026-11-09T22:17:21Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
     "items": [
       {
         "rank": 1,
+        "name": "Claude Fable 5.2 (Max, Default Fallback)",
+        "score": 64.6,
+        "company": "Anthropic",
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+      },
+      {
+        "rank": 2,
+        "name": "Claude Fable 5.2 (Xhigh, Default Fallback)",
+        "score": 62.2,
+        "company": "Anthropic",
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-2-xhigh"
+      },
+      {
+        "rank": 3,
+        "name": "Claude Fable 5.2 (High, Default Fallback)",
+        "score": 61.8,
+        "company": "Anthropic",
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-2-high"
+      },
+      {
+        "rank": 4,
         "name": "Gemini 4 Carbon (High)",
         "score": 60.0,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-4-carbon"
       },
       {
-        "rank": 2,
+        "rank": 5,
         "name": "Claude Opus 5.5 (Max, Default Fallback)",
         "score": 59.1,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5"
       },
       {
-        "rank": 3,
+        "rank": 6,
         "name": "Gemini 4 Carbon (Medium)",
         "score": 58.3,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-4-carbon-medium"
       },
       {
-        "rank": 4,
+        "rank": 7,
         "name": "Claude Opus 5.5 (Xhigh, Default Fallback)",
         "score": 57.4,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5-xhigh"
       },
       {
-        "rank": 5,
+        "rank": 8,
         "name": "GPT-6 Astra (Max)",
         "score": 56.9,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-astra"
       },
       {
-        "rank": 6,
+        "rank": 9,
+        "name": "Claude Fable 5.2 (Medium, Default Fallback)",
+        "score": 56.4,
+        "company": "Anthropic",
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-2-medium"
+      },
+      {
+        "rank": 10,
         "name": "GPT-6 Astra (Xhigh)",
         "score": 55.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-astra-xhigh"
       },
       {
-        "rank": 7,
+        "rank": 11,
         "name": "GPT-6 Astra (High)",
         "score": 54.8,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-astra-high"
       },
       {
-        "rank": 8,
+        "rank": 12,
         "name": "GPT-6.1 Sol (Max)",
         "score": 54.6,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol"
       },
       {
-        "rank": 9,
+        "rank": 13,
         "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
         "score": 54.5,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
       },
       {
-        "rank": 10,
+        "rank": 14,
         "name": "Gemini 4 Carbon (Low)",
         "score": 54.2,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-4-carbon-low"
       },
       {
-        "rank": 11,
+        "rank": 15,
+        "name": "Claude Fable 5.2 (Low, Default Fallback)",
+        "score": 53.9,
+        "company": "Anthropic",
+        "url": "https://artificialanalysis.ai/models/claude-fable-5-2-low"
+      },
+      {
+        "rank": 16,
         "name": "GPT-6.1 Sol (Xhigh)",
         "score": 52.5,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol-xhigh"
       },
       {
-        "rank": 12,
+        "rank": 17,
         "name": "Claude Opus 5.5 (High, Default Fallback)",
         "score": 51.8,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5-high"
       },
       {
-        "rank": 13,
+        "rank": 18,
         "name": "GPT-6 Astra (Medium)",
         "score": 51.6,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-astra-medium"
       },
       {
-        "rank": 14,
+        "rank": 19,
         "name": "GPT-6.1 Terra (Max)",
         "score": 51.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-terra"
       },
       {
-        "rank": 15,
+        "rank": 20,
         "name": "Gemini 4 Argon (High)",
         "score": 50.4,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-4-argon"
       },
       {
-        "rank": 16,
+        "rank": 21,
         "name": "GPT-6.1 Sol (High)",
         "score": 50.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol-high"
       },
       {
-        "rank": 17,
+        "rank": 22,
         "name": "Muse Wonder Full (Max)",
         "score": 50.1,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-wonder-full"
       },
       {
-        "rank": 18,
-        "name": "Claude Fable 5.1 (Xhigh, Default Fallback)",
-        "score": 50.0,
-        "company": "Anthropic",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh"
-      },
-      {
-        "rank": 19,
+        "rank": 23,
         "name": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
         "score": 49.9,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5-xhigh"
       },
       {
-        "rank": 20,
-        "name": "Claude Fable 5.1 (Max, Default Fallback)",
-        "score": 49.2,
-        "company": "Anthropic",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1"
-      },
-      {
-        "rank": 21,
+        "rank": 24,
         "name": "Claude Opus 5.5 (Medium, Default Fallback)",
         "score": 48.2,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5-medium"
       },
       {
-        "rank": 22,
-        "name": "Claude Fable 5.1 (High, Default Fallback)",
-        "score": 47.2,
-        "company": "Anthropic",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-high"
-      },
-      {
-        "rank": 23,
+        "rank": 25,
         "name": "Kimi K3.1 Pro",
         "score": 46.5,
         "company": "Kimi",
         "url": "https://artificialanalysis.ai/models/kimi-k3-1-pro"
       },
       {
-        "rank": 24,
+        "rank": 26,
         "name": "GPT-6.1 Sol (Medium)",
         "score": 46.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol-medium"
       },
       {
-        "rank": 25,
+        "rank": 27,
         "name": "GPT-6.1 Terra (Xhigh)",
         "score": 45.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-terra-xhigh"
       },
       {
-        "rank": 26,
+        "rank": 28,
         "name": "Muse Wonder (Max)",
         "score": 43.6,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-wonder"
       },
       {
-        "rank": 27,
+        "rank": 29,
         "name": "GPT-6 Astra (Low)",
         "score": 43.3,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-astra-low"
       },
       {
-        "rank": 28,
-        "name": "Claude Fable 5.1 (Medium, Default Fallback)",
-        "score": 43.2,
-        "company": "Anthropic",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-medium"
-      },
-      {
-        "rank": 29,
+        "rank": 30,
         "name": "GPT-6.1 Terra (High)",
         "score": 42.4,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-terra-high"
       },
       {
-        "rank": 30,
+        "rank": 31,
         "name": "Claude Sonnet 5.5 (High, Default Fallback)",
         "score": 41.5,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5-high"
       },
       {
-        "rank": 31,
+        "rank": 32,
         "name": "Muse Wonder (High)",
         "score": 40.5,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-wonder-high"
-      },
-      {
-        "rank": 32,
-        "name": "Claude Fable 5.1 (Low, Default Fallback)",
-        "score": 38.7,
-        "company": "Anthropic",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-1-low"
       },
       {
         "rank": 33,
@@ -377,454 +377,482 @@
       },
       {
         "rank": 35,
+        "name": "Muse Ember (Max)",
+        "score": 36.0,
+        "company": "Meta",
+        "url": "https://artificialanalysis.ai/models/muse-ember"
+      },
+      {
+        "rank": 36,
         "name": "Grok 4.7 (Xhigh)",
         "score": 35.5,
         "company": "SpaceXAI",
         "url": "https://artificialanalysis.ai/models/grok-4-7"
       },
       {
-        "rank": 36,
+        "rank": 37,
         "name": "Grok 4.7 (High)",
         "score": 35.2,
         "company": "SpaceXAI",
         "url": "https://artificialanalysis.ai/models/grok-4-7-high"
       },
       {
-        "rank": 37,
+        "rank": 38,
         "name": "GPT-6.1 Sol (Low)",
         "score": 34.8,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-sol-low"
       },
       {
-        "rank": 38,
+        "rank": 39,
         "name": "Claude Opus 5.5 (Low, Default Fallback)",
         "score": 34.8,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-opus-5-5-low"
       },
       {
-        "rank": 39,
+        "rank": 40,
         "name": "Claude Haiku 5.5 (Xhigh)",
         "score": 34.6,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-haiku-5-5-xhigh"
       },
       {
-        "rank": 40,
+        "rank": 41,
         "name": "Tencent Hy4",
         "score": 34.6,
         "company": "Tencent",
         "url": "https://artificialanalysis.ai/models/tencent-hy4"
       },
       {
-        "rank": 41,
+        "rank": 42,
+        "name": "Muse Ember (Xhigh)",
+        "score": 34.1,
+        "company": "Meta",
+        "url": "https://artificialanalysis.ai/models/muse-ember-xhigh"
+      },
+      {
+        "rank": 43,
         "name": "Qwen3.8 Max (0902)",
         "score": 33.7,
         "company": "Alibaba",
         "url": "https://artificialanalysis.ai/models/qwen3-8-max"
       },
       {
-        "rank": 42,
+        "rank": 44,
         "name": "DeepSeek V4.1 Flash 1017 (Max)",
         "score": 32.6,
         "company": "DeepSeek",
         "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017"
       },
       {
-        "rank": 43,
+        "rank": 45,
         "name": "GLM-5.3 (Max)",
         "score": 31.7,
         "company": "Z AI",
         "url": "https://artificialanalysis.ai/models/glm-5-3"
       },
       {
-        "rank": 44,
+        "rank": 46,
         "name": "Grok 4.7 (Low)",
         "score": 31.1,
         "company": "SpaceXAI",
         "url": "https://artificialanalysis.ai/models/grok-4-7-low"
       },
       {
-        "rank": 45,
+        "rank": 47,
         "name": "Gemini 3.8 Flash (High)",
         "score": 30.8,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-3-8-flash"
       },
       {
-        "rank": 46,
+        "rank": 48,
         "name": "Claude Sonnet 5.5 (Medium, Default Fallback)",
         "score": 30.8,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5-medium"
       },
       {
-        "rank": 47,
+        "rank": 49,
         "name": "Inkling 2 Small",
         "score": 30.6,
         "company": "Thinking Machines",
         "url": "https://artificialanalysis.ai/models/inkling-2-small"
       },
       {
-        "rank": 48,
+        "rank": 50,
         "name": "GPT-6.1 Terra (Non-reasoning)",
         "score": 30.5,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-terra-non-reasoning"
       },
       {
-        "rank": 49,
+        "rank": 51,
         "name": "Gemini 3.8 Flash (Medium)",
         "score": 30.1,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-3-8-flash-medium"
       },
       {
-        "rank": 50,
+        "rank": 52,
         "name": "MiMo-V2.6-Pro",
         "score": 29.9,
         "company": "Xiaomi",
         "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro"
       },
       {
-        "rank": 51,
+        "rank": 53,
         "name": "Claude Haiku 5.5 (High)",
         "score": 29.9,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-haiku-5-5-high"
       },
       {
-        "rank": 52,
+        "rank": 54,
         "name": "Ling 3.1 Flash 1019",
         "score": 29.6,
         "company": "InclusionAI",
         "url": "https://artificialanalysis.ai/models/ling-3-1-flash-1019"
       },
       {
-        "rank": 53,
+        "rank": 55,
         "name": "GPT-6.1 Terra (Low)",
         "score": 29.4,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-1-terra-low"
       },
       {
-        "rank": 54,
+        "rank": 56,
         "name": "MiniMax-M3.1-Flash",
         "score": 29.1,
         "company": "MiniMax",
         "url": "https://artificialanalysis.ai/models/minimax-m3-1-flash"
       },
       {
-        "rank": 55,
+        "rank": 57,
         "name": "DeepSeek V4.1 Flash 1017 (High)",
         "score": 28.6,
         "company": "DeepSeek",
         "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017-high"
       },
       {
-        "rank": 56,
+        "rank": 58,
         "name": "Step 5 Preview",
         "score": 28.5,
         "company": "StepFun",
         "url": "https://artificialanalysis.ai/models/step-5"
       },
       {
-        "rank": 57,
+        "rank": 59,
         "name": "GPT-6 Luna (Max)",
         "score": 27.9,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna"
       },
       {
-        "rank": 58,
+        "rank": 60,
         "name": "GLM-5.3-Flash",
         "score": 27.8,
         "company": "Z AI",
         "url": "https://artificialanalysis.ai/models/glm-5-3-flash"
       },
       {
-        "rank": 59,
+        "rank": 61,
         "name": "MiMo-V2.6-Flash",
         "score": 26.7,
         "company": "Xiaomi",
         "url": "https://artificialanalysis.ai/models/mimo-v2-6-flash"
       },
       {
-        "rank": 60,
+        "rank": 62,
         "name": "Mistral Large 4 (High)",
         "score": 26.1,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-large-4"
       },
       {
-        "rank": 61,
+        "rank": 63,
         "name": "Claude Sonnet 5.5 (Low, Default Fallback)",
         "score": 25.6,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5-low"
       },
       {
-        "rank": 62,
+        "rank": 64,
         "name": "Muse Spark Open (Xhigh)",
         "score": 24.9,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-spark-open"
       },
       {
-        "rank": 63,
+        "rank": 65,
         "name": "Claude Haiku 5.5 (Medium)",
         "score": 24.6,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-haiku-5-5-medium"
       },
       {
-        "rank": 64,
+        "rank": 66,
+        "name": "Agnes 2.5 Pro Theta",
+        "score": 24.0,
+        "company": "Sapiens AI",
+        "url": "https://artificialanalysis.ai/models/agnes-2-5-pro-theta"
+      },
+      {
+        "rank": 67,
         "name": "GPT-6 Luna (Xhigh)",
         "score": 23.5,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna-xhigh"
       },
       {
-        "rank": 65,
+        "rank": 68,
         "name": "Mistral Large 4 (Medium)",
         "score": 23.1,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-large-4-medium"
       },
       {
-        "rank": 66,
+        "rank": 69,
         "name": "GLM-5.3 (Low)",
         "score": 23.1,
         "company": "Z AI",
         "url": "https://artificialanalysis.ai/models/glm-5-3-low"
       },
       {
-        "rank": 67,
+        "rank": 70,
         "name": "DeepSeek V4 Pro 0813 (Max)",
         "score": 23.1,
         "company": "DeepSeek",
         "url": "https://artificialanalysis.ai/models/deepseek-v4-pro"
       },
       {
-        "rank": 68,
+        "rank": 71,
         "name": "Gemini 3.8 Flash (Low)",
         "score": 22.5,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-3-8-flash-low"
       },
       {
-        "rank": 69,
+        "rank": 72,
         "name": "GPT-6 Luna (High)",
         "score": 21.4,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna-high"
       },
       {
-        "rank": 70,
+        "rank": 73,
         "name": "Nanbeige4.3-33B",
         "score": 20.4,
         "company": "Nanbeige",
         "url": "https://artificialanalysis.ai/models/nanbeige4-3-33b"
       },
       {
-        "rank": 71,
+        "rank": 74,
         "name": "Qwen3.8 27B (Xhigh)",
         "score": 20.1,
         "company": "Alibaba",
         "url": "https://artificialanalysis.ai/models/qwen3-8-27b"
       },
       {
-        "rank": 72,
+        "rank": 75,
         "name": "MiniMax-M3",
         "score": 18.9,
         "company": "MiniMax",
         "url": "https://artificialanalysis.ai/models/minimax-m3"
       },
       {
-        "rank": 73,
+        "rank": 76,
         "name": "Claude Haiku 5.5 (Low)",
         "score": 18.6,
         "company": "Anthropic",
         "url": "https://artificialanalysis.ai/models/claude-haiku-5-5-low"
       },
       {
-        "rank": 74,
+        "rank": 77,
         "name": "DeepSeek V4.1 Flash 1017 (Non-reasoning)",
         "score": 18.5,
         "company": "DeepSeek",
         "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017-non-reasoning"
       },
       {
-        "rank": 75,
+        "rank": 78,
         "name": "GPT-6 Luna (Medium)",
         "score": 18.5,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna-medium"
       },
       {
-        "rank": 76,
+        "rank": 79,
         "name": "K2 Horizon 375B A23B",
         "score": 17.8,
         "company": "Institute of Foundation Models",
         "url": "https://artificialanalysis.ai/models/k2-horizon-375b-a23b"
       },
       {
-        "rank": 77,
+        "rank": 80,
         "name": "Beam 1.0",
         "score": 17.7,
         "company": "Reflection",
         "url": "https://artificialanalysis.ai/models/reflection-beam"
       },
       {
-        "rank": 78,
+        "rank": 81,
         "name": "Qwen3.8 27B (Medium)",
         "score": 17.5,
         "company": "Alibaba",
         "url": "https://artificialanalysis.ai/models/qwen3-8-27b-medium"
       },
       {
-        "rank": 79,
+        "rank": 82,
         "name": "Qwen3.8 27B (Low)",
         "score": 15.7,
         "company": "Alibaba",
         "url": "https://artificialanalysis.ai/models/qwen3-8-27b-low"
       },
       {
-        "rank": 80,
+        "rank": 83,
         "name": "Nemotron 3.5 Super VL",
         "score": 13.6,
         "company": "NVIDIA",
         "url": "https://artificialanalysis.ai/models/nemotron-3-5-super-vl"
       },
       {
-        "rank": 81,
+        "rank": 84,
         "name": "Inkling Small",
         "score": 12.9,
         "company": "Thinking Machines",
         "url": "https://artificialanalysis.ai/models/inkling-small"
       },
       {
-        "rank": 82,
+        "rank": 85,
         "name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
         "score": 12.6,
         "company": "DeepSeek",
         "url": "https://artificialanalysis.ai/models/deepseek-v4-pro-non-reasoning"
       },
       {
-        "rank": 83,
+        "rank": 86,
         "name": "Inkling (Xhigh)",
         "score": 12.5,
         "company": "Thinking Machines",
         "url": "https://artificialanalysis.ai/models/inkling"
       },
       {
-        "rank": 84,
+        "rank": 87,
         "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
         "score": 11.8,
         "company": "NVIDIA",
         "url": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b"
       },
       {
-        "rank": 85,
+        "rank": 88,
         "name": "Gemini 3.5 Flash-Lite",
         "score": 11.7,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite"
       },
       {
-        "rank": 86,
+        "rank": 89,
         "name": "Qwen3.8 27B (Non-reasoning)",
         "score": 10.0,
         "company": "Alibaba",
         "url": "https://artificialanalysis.ai/models/qwen3-8-27b-non-reasoning"
       },
       {
-        "rank": 87,
+        "rank": 90,
         "name": "GPT-6 Luna (Low)",
         "score": 9.7,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna-low"
       },
       {
-        "rank": 88,
+        "rank": 91,
         "name": "GPT-6 Luna (Non-reasoning)",
         "score": 9.4,
         "company": "OpenAI",
         "url": "https://artificialanalysis.ai/models/gpt-6-luna-non-reasoning"
       },
       {
-        "rank": 89,
+        "rank": 92,
         "name": "K-EXAONE 2.0",
         "score": 7.6,
         "company": "LG AI Research",
         "url": "https://artificialanalysis.ai/models/k-exaone-2-0-0803"
       },
       {
-        "rank": 90,
+        "rank": 93,
         "name": "Muse Glimmer (High)",
         "score": 6.3,
         "company": "Meta",
         "url": "https://artificialanalysis.ai/models/muse-glimmer"
       },
       {
-        "rank": 91,
+        "rank": 94,
         "name": "Command A+",
         "score": 6.2,
         "company": "Cohere",
         "url": "https://artificialanalysis.ai/models/command-a-plus"
       },
       {
-        "rank": 92,
+        "rank": 95,
         "name": "Nemotron 3.5 Lightning",
         "score": 5.5,
         "company": "NVIDIA",
         "url": "https://artificialanalysis.ai/models/nemotron-3-5-lightning"
       },
       {
-        "rank": 93,
+        "rank": 96,
         "name": "Granite 4.2 8B",
         "score": 5.1,
         "company": "IBM",
         "url": "https://artificialanalysis.ai/models/granite-4-2-8b"
       },
       {
-        "rank": 94,
+        "rank": 97,
         "name": "Granite 4.2 3B",
         "score": 4.7,
         "company": "IBM",
         "url": "https://artificialanalysis.ai/models/granite-4-2-3b"
       },
       {
-        "rank": 95,
+        "rank": 98,
         "name": "Mistral Medium 3.5",
         "score": 4.6,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-medium-3-5"
       },
       {
-        "rank": 96,
+        "rank": 99,
         "name": "Gemma 4 31B (Reasoning)",
         "score": 4.4,
         "company": "Google",
         "url": "https://artificialanalysis.ai/models/gemma-4-31b"
       },
       {
-        "rank": 97,
+        "rank": 100,
         "name": "Mistral Small 4 (Reasoning)",
         "score": 4.3,
         "company": "Mistral",
         "url": "https://artificialanalysis.ai/models/mistral-small-4"
       },
       {
-        "rank": 98,
+        "rank": 101,
+        "name": "gpt-oss-120b (High)",
+        "score": 3.8,
+        "company": "OpenAI",
+        "url": "https://artificialanalysis.ai/models/gpt-oss-120b"
+      },
+      {
+        "rank": 102,
         "name": "North Mini Code",
         "score": 3.4,
         "company": "Cohere",
         "url": "https://artificialanalysis.ai/models/north-mini-code"
       },
       {
-        "rank": 99,
+        "rank": 103,
         "name": "NVIDIA Nemotron 3 Nano 4B",
         "score": 1.8,
         "company": "NVIDIA",
