@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-12T23:35:23Z",
+  "attempted_at": "2026-11-13T06:38:12Z",
   "conferences": {
-    "updated_at": "2026-11-12T23:35:23Z",
+    "updated_at": "2026-11-13T06:38:12Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -132,7 +132,7 @@
     ]
   },
   "artificial_analysis": {
-    "updated_at": "2026-11-12T23:35:23Z",
+    "updated_at": "2026-11-13T06:38:12Z",
     "source_date": null,
     "url": "https://artificialanalysis.ai/leaderboards/models",
     "metric": "Intelligence Index",
@@ -835,7 +835,7 @@
         "name": "K-EXAONE 2.0",
         "score": 7.6,
         "company": "LG AI Research",
-        "url": "https://artificialanalysis.ai/models/k-exaone-2-0-0803"
+        "url": "https://artificialanalysis.ai/models/k-exaone-2-0"
       },
       {
         "rank": 101,
