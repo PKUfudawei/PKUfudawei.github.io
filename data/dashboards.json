@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-15T18:48:33Z",
+  "attempted_at": "2026-11-16T06:21:36Z",
   "conferences": {
-    "updated_at": "2026-11-15T18:48:33Z",
+    "updated_at": "2026-11-16T06:21:36Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -34,14 +34,14 @@
       {
         "name": "ICML",
         "group": "AI",
-        "next": null,
-        "last": {
-          "year": 2026,
-          "url": "https://icml.cc/Conferences/2026",
-          "timezone": "UTC+0",
-          "abstract": "2026-01-24T11:59:59Z",
-          "paper": "2026-01-29T11:59:59Z"
+        "next": {
+          "year": 2027,
+          "url": "https://icml.cc/Conferences/2027",
+          "timezone": "AoE",
+          "abstract": "2027-01-15T11:59:59Z",
+          "paper": "2027-01-23T11:59:59Z"
         },
+        "last": null,
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/icml.yml",
         "latest_year": 2027
       },
