@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-17T07:50:38Z",
+  "attempted_at": "2026-11-17T20:51:24Z",
   "conferences": {
-    "updated_at": "2026-11-17T07:50:38Z",
+    "updated_at": "2026-11-17T20:51:24Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -48,14 +48,14 @@
       {
         "name": "CVPR",
         "group": "CV",
-        "next": {
+        "next": null,
+        "last": {
           "year": 2027,
           "url": "https://cvpr.thecvf.com/Conferences/2027",
           "timezone": "UTC-12",
           "abstract": "2026-11-11T11:59:59Z",
           "paper": "2026-11-17T11:59:59Z"
         },
-        "last": null,
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/cvpr.yml",
         "latest_year": 2027
       },
