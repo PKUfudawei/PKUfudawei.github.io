@@ -1,7 +1,7 @@
 {
-  "attempted_at": "2026-11-21T07:00:07Z",
+  "attempted_at": "2026-11-21T19:10:51Z",
   "conferences": {
-    "updated_at": "2026-11-21T07:00:07Z",
+    "updated_at": "2026-11-21T19:10:51Z",
     "items": [
       {
         "name": "NeurIPS",
@@ -11,7 +11,7 @@
           "year": 2026,
           "url": "https://neurips.cc/Conferences/2026",
           "timezone": "UTC+0",
-          "abstract": "2026-05-05T11:59:00Z",
+          "abstract": "2026-05-05T11:59:59Z",
           "paper": "2026-05-07T11:59:59Z"
         },
         "source": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/nips.yml",
